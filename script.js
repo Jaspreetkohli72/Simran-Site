@@ -1,4 +1,4 @@
-var radius = 240; // how big of the radius
+var radius = 380; // how big of the radius
 var autoRotate = true; // auto rotate or not
 var rotateSpeed = -60; // unit: seconds/360 degrees
 var imgWidth = 120; // width of images (unit: px)
@@ -81,19 +81,19 @@ if (autoRotate) {
 // </audio>
 // `;
 
-const audio = document.createElement("audio");
-audio.src = "./audio/bgMusic.mp3";
-audio.controls = bgMusicControls;
-audio.autoplay = true;
-audio.loop = true;
+// const audio = document.createElement("audio");
+// audio.src = "./audio/bgMusic.mp3";
+// audio.controls = bgMusicControls;
+// audio.autoplay = false;
+// audio.loop = true;
 
-const fallback = document.createElement("p");
-fallback.textContent =
-	"If you are reading this, it is because your browser does not support the audio element.";
+// const fallback = document.createElement("p");
+// fallback.textContent =
+// 	"If you are reading this, it is because your browser does not support the audio element.";
 
-audio.appendChild(fallback);
-document.getElementById("music-container").appendChild(audio);
-audio.play();
+// audio.appendChild(fallback);
+// document.getElementById("music-container").appendChild(audio);
+// audio.play();
 
 // setup events
 document.onpointerdown = function (e) {
